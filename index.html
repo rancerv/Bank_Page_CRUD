@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>StarBank</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="https://cdn-icons-png.flaticon.com/512/48/48957.png" alt="logo"></div>
+        <h1>Star<span>Bank</span></h1>
+    </header>
+    <aside>
+        <div class="asideLink" id="accountButton"><a href="#">Cuentas</a></div>
+        <div class="asideLink" id="transferButton"><a href="#">Transacciones</a></div>
+        <div class="asideLink"><a href="#">Pago de prestamos</a></div>
+        <div class="asideLink"><a href="#">Pago de tarjetas</a></div>
+    </aside>
+    <main>
+        <div class="mainDiv">
+            <h2 class="h2T" id="title">Transactions</h2><p id="new_b" class="newT">Nueva Transaccion</p>
+        </div>
+        <section id="new_tra" class="hide">
+            <h4>Nueva Transaccion</h4>
+            <input class="controls" type="number" name="monto" id="monto" min="1" step="any" placeholder="Monto Transaccion">
+            <input class="controls" type="text" name="concepto" id="concepto" placeholder="Ingrese concepto">
+            <input class="controls" type="text" name="descripcion" id="descripcion" placeholder="Ingrese descripcion">
+            <select id="accounts_select" name="Cuentas">
+                
+              </select>
+            <input class="botons" id="summit_b" type="submit" value="Realizar">
+        </section>
+        <div id="container" class="transacciones">
+            
+        </div>
+        <div class= "hide" id="edit_card">
+            <h4>Editar</h4>
+            <input class="controls" type="number" name="monto" id="edit_amount" min="1" step="any" placeholder="Monto Transaccion">
+            <input class="controls" type="text" name="concepto" id="edit_concept" placeholder="Ingrese concepto">
+            <input class="controls" type="text" name="descripcion" id="edit_desc" placeholder="Ingrese descripcion">
+            <input class="controls" type="date" name="fecha" id="edit_date" placeholder="Ingrese fecha">
+            <input class="botons" id="summit_c" type="submit" value="Editar">
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
